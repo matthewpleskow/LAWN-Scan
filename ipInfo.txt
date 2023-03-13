@@ -1,0 +1,39 @@
+128.61.0.0/20                    2610:148:1F00::/64                        eduroam
+
+128.61.16.0/20                 2610:148:1F00:1000::/64             eduroam
+
+128.61.32.0/20                 2610:148:1F00:2000::/64             eduroam
+
+128.61.48.0/20                 2610:148:1F00:3000::/64             eduroam
+
+128.61.64.0/20                 2610:148:1F00:4000::/64             eduroam
+
+128.61.112.0/20               2610:148:1F00:7000::/64             eduroam
+
+143.215.48.0/20               2610:148:1F02:3000::/64             eduroam
+
+143.215.80.0/20               2610:148:1F02:5000::/64             eduroam
+
+143.215.96.0/20               2610:148:1F02:6000::/64             eduroam
+
+143.215.112.0/20            2610:148:1F02:7000::/64             eduroam
+
+128.61.80.0/20                 2610:148:1F00:5000::/64             Wired LAWN - ISS Enabled (ResNet)
+
+100.70.32.0/19                                                                              Wired LAWN - ISS Enabled (Campus) (Private, shouldn’t be NATed since you’re scanning from inside campus)
+
+100.70.0.0/19                    2610:148:2146::/64                       GTother - ISS Enabled (Private/NAT, same as above)
+
+
+These are the ISS Disabled subnets. You may be able to scan the eduroam ISS Disabled subnet from Wired Lawn ISS Enabled, but for the rest you will need to be on that subnet in order to scan. It may actually be tricky to get a host onto ResNet ISS Disabled without being in a Residence Hall, but we can work that out.
+
+
+143.215.132.0/24                                                                           eduroam (ISS Disabled)
+
+143.215.188.0/22            2610:148:1F02:BC00::/64             GTother - ISS Disabled
+
+143.215.184.0/22                                                                         Wired LAWN - ISS Disabled (Campus)
+
+128.61.104.0/22               2610:148:1F00:6800::/64             Wired LAWN - ISS Disabled (ResNet-Reserved)
+
+128.61.108.0/24               2610:148:1F00:6C00::/64             Wired LAWN - ISS Disabled (ResNet-Pool)
